@@ -1,0 +1,373 @@
+# ============================================================================
+# .gitignore para Proyecto de Ingeniería de LLM
+# ============================================================================
+
+# ============================================================================
+# ARCHIVOS DE CONFIGURACIÓN SENSIBLES
+# ============================================================================
+.env
+.env.local
+.env.production
+.env.staging
+*.key
+config.json
+secrets.json
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ============================================================================
+# JUPYTER NOTEBOOKS
+# ============================================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ============================================================================
+# ANACONDA / CONDA
+# ============================================================================
+# Conda environments
+.conda/
+conda-meta/
+
+# ============================================================================
+# MODELOS Y DATOS
+# ============================================================================
+# Modelos de ML/AI (pueden ser muy grandes)
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.tflite
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Datasets grandes
+*.csv
+*.json
+*.parquet
+*.feather
+*.xlsx
+*.xls
+data/
+datasets/
+raw_data/
+processed_data/
+
+# Excepciones para archivos pequeños de configuración
+!config.json.example
+!sample_data.json
+!requirements.txt
+
+# ============================================================================
+# LOGS Y TEMPORALES
+# ============================================================================
+*.log
+logs/
+temp/
+tmp/
+.tmp/
+*.tmp
+*.temp
+
+# ============================================================================
+# SISTEMA OPERATIVO
+# ============================================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================================================
+# EDITORES E IDEs
+# ============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ============================================================================
+# ARCHIVOS DE RESPALDO Y TEMPORALES
+# ============================================================================
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.swp
+*.tmp
+*~
+
+# ============================================================================
+# ARCHIVOS ESPECÍFICOS DEL PROYECTO
+# ============================================================================
+# Archivos generados por scrapers
+scraped_data/
+output/
+results/
+
+# Folletos generados (mantener solo ejemplos)
+folleto_*.md
+!folleto_*ejemplo*.md
+
+# Archivos de prueba temporales
+test_output/
+debug_*
+
+# Caché de modelos locales
+.ollama/
+models_cache/
+
+# ============================================================================
+# ARCHIVOS DE CONFIGURACIÓN LOCAL
+# ============================================================================
+local_config.py
+personal_settings.json
+user_preferences.json
+
+# ============================================================================
+# ARCHIVOS MULTIMEDIA GRANDES
+# ============================================================================
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mp3
+*.wav
+*.flac
+*.aac
+
+# Imágenes grandes (mantener solo las necesarias)
+*.tiff
+*.tif
+*.raw
+*.bmp
+# Permitir PNG y JPG pequeños para documentación
+# *.png
+# *.jpg
+# *.jpeg
+
+# ============================================================================
+# ARCHIVOS DE DOCUMENTACIÓN GENERADOS
+# ============================================================================
+# Sphinx
+_build/
+_static/
+_templates/
+
+# ============================================================================
+# HERRAMIENTAS DE DESARROLLO
+# ============================================================================
+# Coverage reports
+.coverage
+htmlcov/
+
+# Profiling
+*.prof
+
+# Benchmarks
+benchmark_results/
+
+# ============================================================================
+# ARCHIVOS DE CONFIGURACIÓN DE SERVICIOS
+# ============================================================================
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+*.kubeconfig
+
+# ============================================================================
+# COMENTARIOS FINALES
+# ============================================================================
+# Este .gitignore está diseñado para proyectos de Ingeniería de LLM
+# Excluye archivos sensibles, temporales y de gran tamaño
+# Mantiene la estructura del proyecto limpia y segura para GitHub
