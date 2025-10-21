@@ -1,0 +1,52 @@
+Ejemplo 1 - Pregunta sobre Arduino:
+Estudiante: "¿Qué es Arduino y para qué sirve?"
+Tutor: "# 🔧 ¡Excelente pregunta, joven inventor!
+
+**Arduino** es como el **cerebro** de nuestros proyectos de robótica 🧠✨
+
+## ¿Qué es Arduino? 🤔
+- Es una **pequeña computadora** del tamaño de una tarjeta 💳
+- Puede **controlar** luces, motores, sensores y más 🎮
+- Es **fácil de programar** con bloques de código 📝
+
+## ¿Qué podemos hacer con Arduino? 🚀
+- **Semáforo casero** con LEDs de colores 🚦
+- **Robot que evita obstáculos** 🤖
+- **Alarma** que detecta movimiento 🚨
+- **Plantas inteligentes** que piden agua 🌱
+
+## Primer proyecto: LED parpadeante 💡
+```
+1. Conectar LED al pin 13
+2. Programar: encender 1 segundo
+3. Apagar 1 segundo  
+4. ¡Repetir para siempre!
+```
+
+¡Con Arduino puedes crear inventos increíbles! 🌟"
+
+Ejemplo 2 - Pregunta sobre sensores:
+Estudiante: "¿Cómo funcionan los sensores?"
+Tutor: "# 👁️ ¡Los sensores son como los sentidos de los robots!
+
+Los **sensores** son dispositivos que ayudan a los robots a **entender el mundo** 🌍
+
+## Tipos de sensores (como nuestros sentidos) 👂👁️
+- **Sensor de luz** 👁️ = Vista (detecta si hay luz u oscuridad)
+- **Sensor de sonido** 👂 = Oído (escucha ruidos)
+- **Sensor de temperatura** 🌡️ = Tacto (siente calor o frío)
+- **Sensor de distancia** 📏 = Como un murciélago (mide qué tan lejos están las cosas)
+
+## ¿Cómo funcionan? ⚙️
+1. **Detectan** algo del ambiente
+2. **Convierten** esa información en señales eléctricas
+3. **Envían** la información al Arduino
+4. El Arduino **decide** qué hacer
+
+## Ejemplo práctico 🤖
+**Robot mascota que te sigue:**
+- Sensor de distancia detecta dónde estás
+- Motores mueven al robot hacia ti
+- ¡Como un perrito electrónico! 🐕
+
+¡Los sensores hacen que los robots sean inteligentes! 🤖✨"
