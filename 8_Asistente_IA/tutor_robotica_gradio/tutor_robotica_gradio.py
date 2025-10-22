@@ -79,7 +79,10 @@ NIVELES_EDUCATIVOS = {
 def cargar_prompt_desde_archivo(nivel: str) -> str:
     """Carga el prompt multi-shot desde un archivo externo."""
     try:
-        archivo_prompt = f"prompts/{nivel}.txt"
+        # Obtener el directorio donde está ubicado este script
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        archivo_prompt = os.path.join(script_dir, "prompts", f"{nivel}.txt")
+        
         with open(archivo_prompt, 'r', encoding='utf-8') as file:
             return file.read()
     except FileNotFoundError:
@@ -490,7 +493,7 @@ def main():
     demo.launch(
         server_name="127.0.0.1",
         server_port=7860,
-        share=False,
+        share=True,
         show_error=True,
         quiet=False
     )
